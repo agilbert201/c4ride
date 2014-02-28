@@ -1,0 +1,5 @@
+name: C4 Ride Web Site
+--markdown: redcarpet
+markdown: kramdown
+pygments: true
+exclude: [Gemfile, Gemfile.lock, Rakefile, bin, README.md]
