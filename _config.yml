@@ -1,5 +1,5 @@
-name: C4 Ride Web Site
+name: Cabot Ride the Ridges Web Site
 --markdown: redcarpet
 markdown: kramdown
 pygments: true
-exclude: [Gemfile, Gemfile.lock, Rakefile, bin, README.md]
+exclude: [Gemfile, Gemfile.lock, Rakefile, bin, README.md notes.txt]
