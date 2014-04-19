@@ -1,24 +1,28 @@
 module Jekyll
 
-  # Naive image gallery generator. Assumes assets are in dest dir for site,
-  # and that corresponding thumbnails are in a subdir Thumbs.
+  # Naive image gallery generator. Assumes assets are in dest for site,
+  # under path provided and that thumbs are in a subdir 'Thumbs'.
   # Example:
   #    {% gallery assets/photos/2013 %}
   class GalleryTag < Liquid::Tag
 
     def initialize(tag_name, markup, tokens)
       super
-      Jekyll.logger.info "GalleryTag initialize"
     end
 
     def render(context)
       @config = context.registers[:site].config['gallerytag']
-      Jekyll.logger.info "GalleryTag render"
+      basePath = @markup.strip
+      photosPath = File.join(context.registers[:site].dest, basePath)
+      Jekyll.logger.info "photosPath #{photosPath}"
+      images = Dir.entries(photosPath).select {|f| !File.directory?(File.join(photosPath, f))}
+      #Jekyll.logger.info Dir.entries(context.registers[:site].dest + "/assets/photos/2013")
       images_html = ""
-      images = [ { "url" => "foo.jpg", "thumbnail" => "Thumbs/foo.jpg" } ]
-      images.each_with_index do |image, key|
-        images_html << "<a href=\"#{image['url']}\" data-gallery>\n"
-        images_html << "  <img src=\"#{image['thumbnail']}\">\n"
+      images.each do |image|
+        photoPath = "/#{basePath}/#{image}"
+        thumbPath = "/#{basePath}/Thumbs/#{image}"
+        images_html << "<a href=\"#{photoPath}\" data-gallery>\n"
+        images_html << "  <img src=\"#{thumbPath}\">\n"
         images_html << "</a>\n"
       end
       return images_html
