@@ -12,7 +12,6 @@ convert -thumbnail 240x $i Thumbs/$i
 Note use of rysnc to _site_cache to avoid unecessary s3 pushing. For middleman see https://github.com/fredjean/middleman-s3_sync.
 
 See https://github.com/redwallhp/JekyllGalleryTag for gallery tag builder example
-
 See https://github.com/nhemsley/middleman-thumbnailer for Middleman thumbnailer example
 
 * Add where we want people to park, please follow signs

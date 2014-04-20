@@ -2,3 +2,4 @@ name: Cabot Ride the Ridges Web Site
 markdown: kramdown
 exclude: [Gemfile, Gemfile.lock, Rakefile, bin, README.md, Notes.md]
 keep_files: ['assets']
+base_url: /
