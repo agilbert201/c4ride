@@ -20,3 +20,7 @@ See https://github.com/nhemsley/middleman-thumbnailer for Middleman thumbnailer 
 * Have Lars point DNS
 
 Put up basic site
+
+## Customize Bootstrap
+
+Use [Bootswatch](git clone https://github.com/thomaspark/bootswatch.git)
