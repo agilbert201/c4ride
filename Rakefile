@@ -29,5 +29,5 @@ end
 
 desc 'Deploy Site Prod'
 task :deploy_site => :build_site_prod do
-  sh 'rsync -azv --delete _site/ agilbert@www.agilbert.net://home/agilbert/Sites/ridetheridges.cabotconnects.org'
+  sh 'rsync -azv --delete _site/ agilbert@www.agilbert.net://home/agilbert/Sites/www.ridetheridges.net'
 end
