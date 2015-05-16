@@ -24,3 +24,10 @@ Put up basic site
 ## Customize Bootstrap
 
 Use [Bootswatch](git clone https://github.com/thomaspark/bootswatch.git)
+
+## 2015 ToDo
+
+Logos
+Run/Walk Option
+Photos
+Video
