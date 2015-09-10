@@ -28,6 +28,20 @@ Use [Bootswatch](git clone https://github.com/thomaspark/bootswatch.git)
 ## 2015 ToDo
 
 Logos
-Run/Walk Option
 Photos
-Video
+
+Another Email
+Facebook Like
+Twitter Like?
+BikeReg / FB connect?
+Double check google analytics
+
+
+## 2015 Sponsors
+
+As of 5/20/2015
+
+WEC
+Union Bank
+National Life
+Jasper Hill (new logo)
