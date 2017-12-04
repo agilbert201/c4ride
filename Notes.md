@@ -45,3 +45,5 @@ WEC
 Union Bank
 National Life
 Jasper Hill (new logo)
+
+bundle exec jekyll serve
