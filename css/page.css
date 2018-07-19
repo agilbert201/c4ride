@@ -5,6 +5,7 @@
 /* See bootstrap jumbotron narrow for these */
 
 .footer {
+  margin-top: 20px;
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
@@ -19,22 +20,28 @@
   font-size: 21px;
 }
 
+.bikereg {
+  margin-left: 5px;
+}
+
+.carousel-caption .btn {
+  margin-left: 5px;
+}
+
 /* Tweaks to Carousel */
-    -------------------------------------------------- */
 
 /* Carousel base class */
 
-
 .carousel {
-  width: 750px; 
+  /*width: 750px;*/
   margin: 0 auto;
 }
 
 #logoCarousel .item {
-    -webkit-transition: opacity 2s; 
-    -moz-transition: opacity 2s; 
-    -ms-transition: opacity 2s; 
-    -o-transition: opacity 2s; 
+    -webkit-transition: opacity 2s;
+    -moz-transition: opacity 2s;
+    -ms-transition: opacity 2s;
+    -o-transition: opacity 2s;
     transition: opacity 2s;
 }
 #logoCarousel .active.left {
@@ -42,6 +49,13 @@
 }
 #logoCarousel .next {
     left:0;opacity:1;z-index:1;
+}
+
+.carousel-caption {
+  padding: 5px;
+  position: relative;
+  left: auto;
+  right: auto;
 }
 
 /*
