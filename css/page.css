@@ -4,6 +4,14 @@
 
 /* See bootstrap jumbotron narrow for these */
 
+/*
+body {
+  background-image: url("/assets/photos/2018/P9090454.JPG");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+*/
+
 .footer {
   margin-top: 20px;
   padding-top: 19px;
@@ -24,8 +32,8 @@
   margin-left: 5px;
 }
 
-.carousel-caption .btn {
-  margin-left: 5px;
+.splash-img {
+  width: 100%;
 }
 
 /* Tweaks to Carousel */
@@ -33,7 +41,7 @@
 /* Carousel base class */
 
 .carousel {
-  /*width: 750px;*/
+  /* width: 750px; */
   margin: 0 auto;
 }
 
@@ -56,6 +64,10 @@
   position: relative;
   left: auto;
   right: auto;
+}
+
+.carousel-caption .btn {
+  margin-left: 5px;
 }
 
 /*
